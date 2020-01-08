@@ -1,0 +1,350 @@
+<html>
+<head>
+<title>TestNG:  order</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>order</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 07 12:57:45 SGT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>2648 seconds (2648871 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc07_editMobileAlreadyExists()'><b>tc07_editMobileAlreadyExists</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td><div><pre>java.lang.AssertionError: expected [Mobile number already used.] but found [Mobile Number already used.]
+	at bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc07_editMobileAlreadyExists(BluMyDetailsTestRunner.java:187)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671900358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671900358'><pre>java.lang.AssertionError: expected [Mobile number already used.] but found [Mobile Number already used.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc07_editMobileAlreadyExists(BluMyDetailsTestRunner.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc12_signupWithoutEmail()'><b>tc12_signupWithoutEmail</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td><div><pre>java.lang.AssertionError: expected [Enter your email address] but found [Enter your email address.]
+	at bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc12_signupWithoutEmail(BluSignUpTestRunner.java:322)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3037451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3037451'><pre>java.lang.AssertionError: expected [Enter your email address] but found [Enter your email address.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc12_signupWithoutEmail(BluSignUpTestRunner.java:322)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>29</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc01_editFirstName()'><b>tc01_editFirstName</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>24</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc01_signup()'><b>tc01_signup</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>71</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc01_validMobileValidPassword()'><b>tc01_validMobileValidPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>20</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc02_UnableToEditFirstName()'><b>tc02_UnableToEditFirstName</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>29</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc02_invalidEmailValidPassword()'><b>tc02_invalidEmailValidPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>15</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc02_signupWithoutReferralCode()'><b>tc02_signupWithoutReferralCode</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>66</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc03_editLastName()'><b>tc03_editLastName</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>24</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc03_invalidMobileNumberValidPassword()'><b>tc03_invalidMobileNumberValidPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>15</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc03_signupWithoutGenderAndRefferalCode()'><b>tc03_signupWithoutGenderAndRefferalCode</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>66</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc04_signupWithoutDOBGenderAndRefferalCode()'><b>tc04_signupWithoutDOBGenderAndRefferalCode</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>43</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc04_unableToEditLastName()'><b>tc04_unableToEditLastName</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>28</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc04_withoutCredentials()'><b>tc04_withoutCredentials</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>4</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc05_editEmail()'><b>tc05_editEmail</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>24</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc05_signupManDetails()'><b>tc05_signupManDetails</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>38</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc06_editEmailAlreadyExists()'><b>tc06_editEmailAlreadyExists</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>18</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc06_notRegisteredMobileNumber()'><b>tc06_notRegisteredMobileNumber</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>16</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc06_signupInvalidEmail()'><b>tc06_signupInvalidEmail</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>36</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc07_editGender()'><b>tc07_editGender</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>8</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc07_notRegisteredEmail()'><b>tc07_notRegisteredEmail</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>16</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc07_signupInvalidPassword()'><b>tc07_signupInvalidPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>35</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner.tc08_referAFriend()'><b>tc08_referAFriend</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner</td>
+<td></td>
+<td>6</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner@43bd930a</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc08_signupNonMatchingPassword()'><b>tc08_signupNonMatchingPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>38</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc08_validEmailPassword()'><b>tc08_validEmailPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>19</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc09_signupInvalidFirstname()'><b>tc09_signupInvalidFirstname</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>36</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc09_validEmailInvalidPassword()'><b>tc09_validEmailInvalidPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>17</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc10_signupInvalidMobile()'><b>tc10_signupInvalidMobile</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>37</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc10_validMobileNumberInvalidPassword()'><b>tc10_validMobileNumberInvalidPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>17</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner.tc11_invalidMobileNumberInvalidPassword()'><b>tc11_invalidMobileNumberInvalidPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner</td>
+<td></td>
+<td>15</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner@3ecd23d9</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc11_signupInvalidRefferalCode()'><b>tc11_signupInvalidRefferalCode</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>49</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc13_signupWithoutPassword()'><b>tc13_signupWithoutPassword</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>30</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc14_signupWithoutConfirmingPass()'><b>tc14_signupWithoutConfirmingPass</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>31</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc15_signupWithoutFirstName()'><b>tc15_signupWithoutFirstName</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>29</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc16_signupWithoutMobileNumber()'><b>tc16_signupWithoutMobileNumber</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>30</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc17_signupRegisteredEmail()'><b>tc17_signupRegisteredEmail</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>36</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+<tr>
+<td title='bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner.tc18_signupRegisteredMobile()'><b>tc18_signupRegisteredMobile</b><br>Test class: bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner</td>
+<td></td>
+<td>38</td>
+<td>bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner@569cfc36</td></tr>
+</table><p>
+</body>
+</html>
