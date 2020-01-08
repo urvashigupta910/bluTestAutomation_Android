@@ -55,7 +55,7 @@ public class Wallet {
 		}
 		public void transactionDetails()
 		{
-			WebElement list=driver.findElement(By.xpath("//android.widget.LinearLayout//android.widget.TextView[1]"));
+			WebElement list=driver.findElement(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='sg.com.blu.android.uat:id/paymentHistoryRecylerView']//android.widget.RelativeLayout[1]"));
 			list.click();
 		/*
 		 * List<WebElement>
@@ -72,5 +72,95 @@ public class Wallet {
 		{
 			WebElement submit=driver.findElement(By.id("sg.com.blu.android.uat:id/submitButton"));
 			submit.click();
+		}
+		public void clickOnSendReceipt()
+		{
+			WebElement receipt=driver.findElement(By.id("sg.com.blu.android.uat:id/resendReceiptButton"));
+			receipt.click();
+		}
+		public WebElement sendReceiptMsg()
+		{
+			WebElement msg=driver.findElement(By.id("android:id/message"));
+			return msg;
+		}
+		public void clickOnOK()
+		{
+			WebElement ok=driver.findElement(By.id("android:id/button1"));
+			ok.click();
+		}
+		public void selectPreferredMethod()
+		{
+			WebElement preferredMethod=driver.findElement(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='sg.com.blu.android.uat:id/paymentMethodsRecyclerView']//android.widget.LinearLayout"));
+			preferredMethod.click();
+		}
+		public WebElement topUpSuccessMsg()
+		{
+			WebElement msg=driver.findElement(By.xpath("//android.widget.ScrollView[@resource-id='sg.com.blu.android.uat:id/nestedScroll']//android.widget.LinearLayout//android.widget.TextView[1]"));
+			return msg;
+		}
+		public WebElement cardTextView()
+		{
+			WebElement card=driver.findElement(By.id("sg.com.blu.android.uat:id/cardTextView"));
+			return card;
+		}
+		public WebElement cardImageView()
+		{
+			WebElement card=driver.findElement(By.id("sg.com.blu.android.uat:id/cardBrandImageView"));
+			return card;
+		}
+		public WebElement tickImageView()
+		{
+			WebElement msg=driver.findElement(By.xpath("//android.widget.ScrollView[@resource-id='sg.com.blu.android.uat:id/nestedScroll']//android.widget.LinearLayout//android.widget.ImageView"));
+			return msg;
+		}
+		public WebElement topUpAmount()
+		{
+			WebElement amt=driver.findElement(By.id("sg.com.blu.android.uat:id/amountTextView"));
+			return amt;
+		}
+		public WebElement dateTime()
+		{
+			WebElement date=driver.findElement(By.id("sg.com.blu.android.uat:id/dateTimeTextView"));
+			return date;
+		}
+		public void clickOnclose()
+		{
+			WebElement close=driver.findElement(By.id("sg.com.blu.android.uat:id/closeButton"));
+			close.click();
+		}
+		public WebElement walletAmount()
+		{
+			WebElement date=driver.findElement(By.id("sg.com.blu.android.uat:id/walletBalanceTextView"));
+			return date;
+		}
+		public void clickOnRemovePaymentMethod()
+		{
+			WebElement remove=driver.findElement(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='sg.com.blu.android.uat:id/paymentMethodsRecyclerView']//android.widget.LinearLayout[1]//android.widget.ImageButton[@resource-id='sg.com.blu.android.uat:id/deleteCardButton']"));
+			remove.click();
+		}
+		public void clickOnDeleteCardButton()
+		{
+			WebElement delete=driver.findElement(By.id("sg.com.blu.android.uat:id/deleteCardButton"));
+			delete.click();
+		}
+		public WebElement removePaymentmethodTitle()
+		{
+			WebElement title=driver.findElement(By.id("sg.com.blu.android.uat:id/title_tv"));
+			return title;
+		}
+		public void clickOnAddPaymentMethod()
+		{
+			WebElement add=driver.findElement(By.id("sg.com.blu.android.uat:id/addPaymentMethodContainer"));
+			add.click();
+		}
+		public WebElement enterCardNumber()
+		{
+			WebElement no=driver.findElement(By.id("sg.com.blu.android.uat:id/et_card_number"));
+			return no;
+		}
+		public WebElement cardTextView1()
+		{
+			WebElement card=driver.findElement(By.id("sg.com.blu.android.uat:id/cardNumberTextView"));
+			return card;
 		}
 }

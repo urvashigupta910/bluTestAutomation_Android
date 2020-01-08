@@ -3,22 +3,91 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestAll]">
   <test thread-count="5" name="order(failed)">
     <classes>
+      <class name="bluAndroid.bluAndroid.TestScripts.WalletTestRunner">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tc01_topUpWallet"/>
+          <include name="getResult"/>
+          <include name="tc03_transactionDetails"/>
+          <include name="tearDown"/>
+          <include name="tc02_payemntMethods"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- bluAndroid.bluAndroid.TestScripts.WalletTestRunner -->
       <class name="bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner">
         <methods>
           <include name="SetUp"/>
           <include name="preCondition"/>
+          <include name="tc04_unableToEditLastName"/>
+          <include name="tc02_UnableToEditFirstName"/>
           <include name="tearDown"/>
           <include name="getResult"/>
+          <include name="tc01_editFirstName"/>
+          <include name="tc05_editEmail"/>
+          <include name="tc07_editGender"/>
+          <include name="tc08_referAFriend"/>
+          <include name="tc03_editLastName"/>
+          <include name="tc06_editEmailAlreadyExists"/>
           <include name="tc07_editMobileAlreadyExists"/>
         </methods>
       </class> <!-- bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner -->
-      <class name="bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner">
+      <class name="bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner">
         <methods>
           <include name="SetUp"/>
-          <include name="tc12_signupWithoutEmail"/>
-          <include name="getResult"/>
+          <include name="tc11_invalidMobileNumberInvalidPassword"/>
+          <include name="tc06_notRegisteredMobileNumber"/>
+          <include name="tc08_validEmailPassword"/>
+          <include name="tc10_validMobileNumberInvalidPassword"/>
           <include name="tearDown"/>
+          <include name="tc03_invalidMobileNumberValidPassword"/>
+          <include name="tc09_validEmailInvalidPassword"/>
+          <include name="tc01_validMobileValidPassword"/>
+          <include name="tc02_invalidEmailValidPassword"/>
+          <include name="getResult"/>
+          <include name="tc04_withoutCredentials"/>
+          <include name="tc07_notRegisteredEmail"/>
           <include name="preCondition"/>
+        </methods>
+      </class> <!-- bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner -->
+      <class name="bluAndroid.bluAndroid.TestScripts.PublicProfileTestRunner">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tc07_unblockMember"/>
+          <include name="tc06_blockMember"/>
+          <include name="tc01_ViewPublicProfile"/>
+          <include name="tc03_viewFriendProfileByMobile"/>
+          <include name="tc02_viewFriendProfileByBluID"/>
+          <include name="getResult"/>
+          <include name="tc05_InvaldMobile"/>
+          <include name="tearDown"/>
+          <include name="tc04_InvaldBluId"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- bluAndroid.bluAndroid.TestScripts.PublicProfileTestRunner -->
+      <class name="bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner">
+        <methods>
+          <include name="tc05_signupManDetails"/>
+          <include name="tc08_signupNonMatchingPassword"/>
+          <include name="tc09_signupInvalidFirstname"/>
+          <include name="SetUp"/>
+          <include name="getResult"/>
+          <include name="tc11_signupInvalidRefferalCode"/>
+          <include name="tc18_signupRegisteredMobile"/>
+          <include name="tc06_signupInvalidEmail"/>
+          <include name="tc17_signupRegisteredEmail"/>
+          <include name="tc04_signupWithoutDOBGenderAndRefferalCode"/>
+          <include name="tc16_signupWithoutMobileNumber"/>
+          <include name="tearDown"/>
+          <include name="tc07_signupInvalidPassword"/>
+          <include name="preCondition"/>
+          <include name="tc01_signup"/>
+          <include name="tc12_signupWithoutEmail"/>
+          <include name="tc10_signupInvalidMobile"/>
+          <include name="tc02_signupWithoutReferralCode"/>
+          <include name="tc03_signupWithoutGenderAndRefferalCode"/>
+          <include name="tc14_signupWithoutConfirmingPass"/>
+          <include name="tc15_signupWithoutFirstName"/>
+          <include name="tc13_signupWithoutPassword"/>
         </methods>
       </class> <!-- bluAndroid.bluAndroid.TestScripts.BluSignUpTestRunner -->
     </classes>

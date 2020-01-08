@@ -6,8 +6,8 @@
       <class name="bluAndroid.bluAndroid.TestScripts.WalletTestRunner">
         <methods>
           <include name="SetUp"/>
+          <include name="tc02_paymentMethods"/>
           <include name="getResult"/>
-          <include name="tc03_transactionDetails"/>
           <include name="tearDown"/>
           <include name="preCondition"/>
         </methods>
