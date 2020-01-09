@@ -79,8 +79,12 @@ public class WalletTestRunner extends BaseClass {
 		w.clickOnWalletIcon();
 		w.clickOnPaymentMethods();
 		w.clickOnAddPaymentMethod();
-		w.enterCardNumber().sendKeys("42424242424242420420123");
-		w.clickOnSubmit();
+		//w.enterCardNumber().click();
+		w.enterCardNumber().sendKeys("42424242424242420420");
+		//w.enterExpiry().sendKeys("0420");
+		w.enterCVC().click();
+		w.enterCVC().sendKeys("123");
+		w.clickOnConfirm();
 		Assert.assertTrue(w.cardTextView1().isDisplayed());
 		Assert.assertEquals(w.cardTextView1().getText(), "4242 (expires 04/20)");
 	}

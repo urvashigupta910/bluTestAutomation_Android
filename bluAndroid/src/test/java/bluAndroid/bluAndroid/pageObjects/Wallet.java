@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import io.appium.java_client.AppiumDriver;
 
@@ -158,9 +159,25 @@ public class Wallet {
 			WebElement no=driver.findElement(By.id("sg.com.blu.android.uat:id/et_card_number"));
 			return no;
 		}
+		public WebElement enterExpiry()
+		{
+			WebElement expiry=driver.findElement(By.id("sg.com.blu.android.uat:id/sg.com.blu.android.uat:id/et_expiry_date"));
+			return expiry;
+		}
+		public WebElement enterCVC()
+		{
+			WebElement cvc=driver.findElement(By.id("sg.com.blu.android.uat:id/et_cvc_number"));
+			return cvc;
+		}
 		public WebElement cardTextView1()
 		{
 			WebElement card=driver.findElement(By.id("sg.com.blu.android.uat:id/cardNumberTextView"));
 			return card;
+		}
+		public void clickOnConfirm()
+		{
+			WebElement confirm=driver.findElement(By.id("sg.com.blu.android.uat:id/submitButton"));
+			Assert.assertTrue(confirm.isDisplayed());
+			confirm.click();
 		}
 }

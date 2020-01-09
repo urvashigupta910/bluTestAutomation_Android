@@ -6,11 +6,9 @@
       <class name="bluAndroid.bluAndroid.TestScripts.WalletTestRunner">
         <methods>
           <include name="SetUp"/>
-          <include name="tc01_topUpWallet"/>
+          <include name="tc02_paymentMethods"/>
           <include name="getResult"/>
-          <include name="tc03_transactionDetails"/>
           <include name="tearDown"/>
-          <include name="tc02_payemntMethods"/>
           <include name="preCondition"/>
         </methods>
       </class> <!-- bluAndroid.bluAndroid.TestScripts.WalletTestRunner -->
@@ -18,49 +16,32 @@
         <methods>
           <include name="SetUp"/>
           <include name="preCondition"/>
-          <include name="tc04_unableToEditLastName"/>
-          <include name="tc02_UnableToEditFirstName"/>
+          <include name="tc08_referAFriend"/>
           <include name="tearDown"/>
           <include name="getResult"/>
-          <include name="tc01_editFirstName"/>
-          <include name="tc05_editEmail"/>
-          <include name="tc07_editGender"/>
-          <include name="tc08_referAFriend"/>
-          <include name="tc03_editLastName"/>
-          <include name="tc06_editEmailAlreadyExists"/>
           <include name="tc07_editMobileAlreadyExists"/>
         </methods>
       </class> <!-- bluAndroid.bluAndroid.TestScripts.BluMyDetailsTestRunner -->
       <class name="bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner">
         <methods>
+          <include name="tc03_invalidMobileNumberValidPassword"/>
           <include name="SetUp"/>
           <include name="tc11_invalidMobileNumberInvalidPassword"/>
-          <include name="tc06_notRegisteredMobileNumber"/>
-          <include name="tc08_validEmailPassword"/>
-          <include name="tc10_validMobileNumberInvalidPassword"/>
-          <include name="tearDown"/>
-          <include name="tc03_invalidMobileNumberValidPassword"/>
-          <include name="tc09_validEmailInvalidPassword"/>
-          <include name="tc01_validMobileValidPassword"/>
           <include name="tc02_invalidEmailValidPassword"/>
           <include name="getResult"/>
           <include name="tc04_withoutCredentials"/>
-          <include name="tc07_notRegisteredEmail"/>
           <include name="preCondition"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- bluAndroid.bluAndroid.TestScripts.BluLoginTestRunner -->
       <class name="bluAndroid.bluAndroid.TestScripts.PublicProfileTestRunner">
         <methods>
           <include name="SetUp"/>
-          <include name="tc07_unblockMember"/>
-          <include name="tc06_blockMember"/>
           <include name="tc01_ViewPublicProfile"/>
           <include name="tc03_viewFriendProfileByMobile"/>
           <include name="tc02_viewFriendProfileByBluID"/>
           <include name="getResult"/>
-          <include name="tc05_InvaldMobile"/>
           <include name="tearDown"/>
-          <include name="tc04_InvaldBluId"/>
           <include name="preCondition"/>
         </methods>
       </class> <!-- bluAndroid.bluAndroid.TestScripts.PublicProfileTestRunner -->
